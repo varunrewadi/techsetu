@@ -3,8 +3,7 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
-import { Sparkles, Menu, X } from "lucide-react"
-import { useState } from "react"
+import { Sparkles } from "lucide-react"
 
 export function Navigation() {
   const pathname = usePathname()

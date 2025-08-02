@@ -172,17 +172,13 @@ export default function HomePage() {
             <div>
               <h3 className="text-3xl font-bold text-slate-900 mb-6">Our Story</h3>
               <p className="text-lg text-slate-600 mb-6">
-                TechSetu was born from a simple observation: small and medium-sized businesses often struggle to access
-                the same cutting-edge technology solutions that large enterprises take for granted.
+                TechSetu is a new digital agency founded by passionate technologists and creators who believe in the power of technology to transform ideas into reality.
               </p>
               <p className="text-lg text-slate-600 mb-6">
-                Our founders, with combined experience of over 15 years in technology and business, decided to bridge
-                this gap by making advanced web development, AI solutions, and automation accessible to businesses of
-                all sizes.
+                While we may be new and haven't worked with clients yet, our vision is clear: to help businesses and entrepreneurs unlock their potential through modern web development, AI, and automation.
               </p>
               <p className="text-lg text-slate-600">
-                Today, we've helped over 100 businesses transform their operations, increase efficiency, and achieve
-                sustainable growth through technology.
+                We're excited to start our journey, build lasting partnerships, and make a real impact—one project at a time.
               </p>
             </div>
             <div className="relative">
