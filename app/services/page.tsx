@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 import {
@@ -16,6 +17,7 @@ import {
   Workflow,
 } from "lucide-react"
 import { Navigation } from "@/components/navigation"
+import { Footer } from "@/components/footer"
 
 export default function ServicesPage() {
   return (
@@ -24,19 +26,23 @@ export default function ServicesPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center">
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#b1b1b12e_1px,transparent_1px),linear-gradient(to_bottom,#b1b1b12e_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
-        
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+      <section className="relative min-h-screen flex items-center overflow-hidden">
+        {/* Background Elements (copied from HomePage hero) */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#b1b1b12e_1px,transparent_1px),linear-gradient(to_bottom,#b1b1b12e_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#14CC60]/5 via-transparent to-green-500/5"></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-[#14CC60]/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-green-500/10 rounded-full blur-3xl"></div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
             <Badge className="mb-6 bg-[#14CC60]/10 text-[#14CC60] hover:bg-[#14CC60]/20">Comprehensive Solutions</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-slate-900 mb-8 leading-tight">
               Our
               <span className="block bg-gradient-to-r from-[#14CC60] to-green-500 bg-clip-text text-transparent">
                 Services
               </span>
             </h1>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-slate-600 mb-12 max-w-4xl mx-auto leading-relaxed">
               From cutting-edge web development to intelligent AI solutions and seamless automation, we provide the
               technology services your business needs to thrive in the digital age.
             </p>
@@ -312,71 +318,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <div className="text-2xl font-bold mb-4">TechSetu</div>
-              <p className="text-slate-400 mb-4">Transforming businesses through innovative technology solutions.</p>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-4 text-[#14CC60]">Services</h3>
-              <ul className="space-y-2 text-slate-400">
-                <li>
-                  <Link href="/services" className="hover:text-[#14CC60] transition-colors">
-                    Web Development
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services" className="hover:text-[#14CC60] transition-colors">
-                    AI Solutions
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services" className="hover:text-[#14CC60] transition-colors">
-                    Automation
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-4 text-[#14CC60]">Company</h3>
-              <ul className="space-y-2 text-slate-400">
-                <li>
-                  <Link href="/#about" className="hover:text-[#14CC60] transition-colors">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/portfolio" className="hover:text-[#14CC60] transition-colors">
-                    Portfolio
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#contact" className="hover:text-[#14CC60] transition-colors">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-4 text-[#14CC60]">Contact</h3>
-              <ul className="space-y-2 text-slate-400">
-                <li>hello@techsetu.com</li>
-                <li>+1 (555) 123-4567</li>
-                <li>
-                  <Link href="/#contact" className="hover:text-[#14CC60] transition-colors">
-                    Get in Touch
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2024 TechSetu. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

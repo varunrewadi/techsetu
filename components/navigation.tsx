@@ -8,10 +8,8 @@ import { useState } from "react"
 
 export function Navigation() {
   const pathname = usePathname()
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-
+  // Only show Services and Portfolio in nav
   const navItems = [
-    { href: "/", label: "Home" },
     { href: "/services", label: "Services" },
     { href: "/portfolio", label: "Portfolio" },
   ]
@@ -19,7 +17,6 @@ export function Navigation() {
   return (
     <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-2xl px-6">
       {/* Main Navigation Pill */}
-      
       <div className="relative">
         {/* Glassmorphism Pill Container */}
         <div className="bg-white/20 backdrop-blur-2xl border border-[#14CC60]/60 rounded-full px-1 py-2">
@@ -32,8 +29,8 @@ export function Navigation() {
               <div className="text-base font-bold text-slate-800 hidden sm:block">TechSetu</div>
             </Link>
 
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-1">
+            {/* Navigation (always visible, pill style) */}
+            <div className="flex items-center space-x-1">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
@@ -56,42 +53,8 @@ export function Navigation() {
             >
               <Link href="#footer">Book a call</Link>
             </Button>
-
-            {/* Mobile Menu Button */}
-            <Button
-              variant="ghost"
-              size="icon"
-              className="lg:hidden text-slate-600 hover:text-[#14CC60] hover:bg-slate-100/50 rounded-full w-8 h-8"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            >
-              {isMobileMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
-            </Button>
           </div>
         </div>
-
-        {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 right-0 mt-2">
-            <div className="bg-white/20 backdrop-blur-2xl border border-[#14CC60]/60 rounded-2xl p-3">
-              <div className="space-y-1">
-                {navItems.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className={`block px-3 py-2 text-sm font-medium rounded-xl transition-all duration-300 ${
-                      pathname === item.href
-                        ? "text-[#14CC60] bg-[#14CC60]/10"
-                        : "text-slate-600 hover:text-[#14CC60] hover:bg-slate-100/50"
-                    }`}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </div>
-        )}
       </div>
     </nav>
   )

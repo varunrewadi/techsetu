@@ -80,20 +80,20 @@ export default function HomePage() {
 
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Web Development Card */}
-            <Card className="group relative overflow-hidden bg-white/80 backdrop-blur-xl border border-[#14CC60]/30 transition-all duration-500 hover:scale-105 hover:-translate-y-2">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#14CC60]/5 to-green-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <Card className="relative overflow-hidden bg-white/80 backdrop-blur-xl border border-[#14CC60]/30 transition-all duration-500">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#14CC60]/5 to-green-500/5 opacity-0 transition-opacity duration-500"></div>
               <CardContent className="relative p-8 text-center">
-                <div className="w-20 h-20 bg-gradient-to-br from-[#14CC60] to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-all duration-300">
+                <div className="w-20 h-20 bg-gradient-to-br from-[#14CC60] to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-8 transition-all duration-300">
                   <Code className="h-10 w-10 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-slate-900 mb-4">Web Development</h3>
                 <p className="text-slate-600 mb-8 leading-relaxed">
-                  Modern, responsive websites and web applications built with cutting-edge technologies
+                  Modern web experiences and advanced technologies for dynamic digital solutions
                 </p>
                 <Button
                   variant="outline"
                   asChild
-                  className="border-[#14CC60]/50 text-[#14CC60] hover:bg-[#14CC60]/10 bg-transparent group-hover:bg-[#14CC60]/10 transition-all duration-300 rounded-full"
+                  className="border-[#14CC60]/50 text-[#14CC60] hover:bg-[#14CC60]/10 bg-transparent transition-all duration-300 rounded-full"
                 >
                   <Link href="/services#web-development">Learn More</Link>
                 </Button>
@@ -101,10 +101,10 @@ export default function HomePage() {
             </Card>
 
             {/* AI Solutions Card */}
-            <Card className="group relative overflow-hidden bg-white/80 backdrop-blur-xl border border-green-500/30 transition-all duration-500 hover:scale-105 hover:-translate-y-2">
-              <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 to-[#14CC60]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <Card className="relative overflow-hidden bg-white/80 backdrop-blur-xl border border-green-500/30 transition-all duration-500">
+              <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 to-[#14CC60]/5 opacity-0 transition-opacity duration-500"></div>
               <CardContent className="relative p-8 text-center">
-                <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-[#14CC60] rounded-2xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-all duration-300">
+                <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-[#14CC60] rounded-2xl flex items-center justify-center mx-auto mb-8 transition-all duration-300">
                   <Brain className="h-10 w-10 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-slate-900 mb-4">AI Solutions</h3>
@@ -114,7 +114,7 @@ export default function HomePage() {
                 <Button
                   variant="outline"
                   asChild
-                  className="border-green-500/50 text-green-600 hover:bg-green-500/10 bg-transparent group-hover:bg-green-500/10 transition-all duration-300 rounded-full"
+                  className="border-green-500/50 text-green-600 hover:bg-green-500/10 bg-transparent transition-all duration-300 rounded-full"
                 >
                   <Link href="/services#ai-solutions">Learn More</Link>
                 </Button>
@@ -122,10 +122,10 @@ export default function HomePage() {
             </Card>
 
             {/* Automation Card */}
-            <Card className="group relative overflow-hidden bg-white/80 backdrop-blur-xl border border-teal-500/30 transition-all duration-500 hover:scale-105 hover:-translate-y-2">
-              <div className="absolute inset-0 bg-gradient-to-br from-teal-500/5 to-[#14CC60]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <Card className="relative overflow-hidden bg-white/80 backdrop-blur-xl border border-teal-500/30 transition-all duration-500">
+              <div className="absolute inset-0 bg-gradient-to-br from-teal-500/5 to-[#14CC60]/5 opacity-0 transition-opacity duration-500"></div>
               <CardContent className="relative p-8 text-center">
-                <div className="w-20 h-20 bg-gradient-to-br from-teal-500 to-[#14CC60] rounded-2xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-all duration-300">
+                <div className="w-20 h-20 bg-gradient-to-br from-teal-500 to-[#14CC60] rounded-2xl flex items-center justify-center mx-auto mb-8 transition-all duration-300">
                   <Zap className="h-10 w-10 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-slate-900 mb-4">Automation</h3>
@@ -135,7 +135,7 @@ export default function HomePage() {
                 <Button
                   variant="outline"
                   asChild
-                  className="border-teal-500/50 text-teal-600 hover:bg-teal-500/10 bg-transparent group-hover:bg-teal-500/10 transition-all duration-300 rounded-full"
+                  className="border-teal-500/50 text-teal-600 hover:bg-teal-500/10 bg-transparent transition-all duration-300 rounded-full"
                 >
                   <Link href="/services#automation">Learn More</Link>
                 </Button>
@@ -220,45 +220,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Core Values */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                icon: Target,
-                title: "Our Mission",
-                desc: "To democratize access to cutting-edge technology solutions for businesses worldwide",
-                color: "[#14CC60]",
-              },
-              {
-                icon: Lightbulb,
-                title: "Innovation",
-                desc: "We stay at the forefront of technology trends to provide the most advanced solutions",
-                color: "green-500",
-              },
-              {
-                icon: Users,
-                title: "Partnership",
-                desc: "Building long-term partnerships with our clients, growing together and celebrating success",
-                color: "teal-500",
-              },
-              {
-                icon: Award,
-                title: "Excellence",
-                desc: "Committed to delivering exceptional quality in every project, exceeding expectations",
-                color: "[#14CC60]",
-              },
-            ].map((item, index) => (
-              <div key={index} className="group text-center">
-                <div
-                  className={`w-20 h-20 bg-gradient-to-br from-${item.color} to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-all duration-300`}
-                >
-                  <item.icon className="h-10 w-10 text-white" />
-                </div>
-                <h4 className="text-xl font-bold text-slate-900 mb-3">{item.title}</h4>
-                <p className="text-slate-600 leading-relaxed">{item.desc}</p>
-              </div>
-            ))}
-          </div>
+          
 
           {/* Why Choose Us */}
           <div className="mt-20">
