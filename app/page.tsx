@@ -1,8 +1,10 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ArrowRight, Code, Brain, Zap, Star, Users, Award, Target, Lightbulb, Sparkles } from "lucide-react"
+import { ArrowRight, Code, Brain, Zap, Users, Award, Target, Lightbulb } from "lucide-react"
 import { Navigation } from "@/components/navigation"
+import { FAQSection } from "@/components/faq-section"
+import { Footer } from "@/components/footer"
 
 export default function HomePage() {
   return (
@@ -192,7 +194,33 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Mission & Values */}
+          {/* Our Approach */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+            <div className="relative">
+              <img
+                src="/placeholder.svg?height=400&width=600"
+                alt="Our development process"
+                className="rounded-2xl border border-[#14CC60]/20"
+              />
+            </div>
+            <div>
+              <h3 className="text-3xl font-bold text-slate-900 mb-6">Our Approach</h3>
+              <p className="text-lg text-slate-600 mb-6">
+                We believe in a collaborative, transparent approach to technology solutions. Every project starts with
+                understanding your unique challenges and goals.
+              </p>
+              <p className="text-lg text-slate-600 mb-6">
+                Our process combines cutting-edge technology with proven methodologies to deliver solutions that not only
+                meet your current needs but scale with your business growth.
+              </p>
+              <p className="text-lg text-slate-600">
+                From initial consultation to final deployment, we work closely with you to ensure every solution aligns
+                perfectly with your vision and objectives.
+              </p>
+            </div>
+          </div>
+
+          {/* Core Values */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
@@ -232,93 +260,106 @@ export default function HomePage() {
             ))}
           </div>
 
-          {/* Stats */}
-          <div className="grid md:grid-cols-4 gap-8 text-center mt-20">
-            <div>
-              <div className="text-4xl md:text-5xl font-bold text-[#14CC60] mb-2">100+</div>
-              <div className="text-slate-600">Projects Completed</div>
+          {/* Why Choose Us */}
+          <div className="mt-20">
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-bold text-slate-900 mb-4">Why Choose TechSetu?</h3>
+              <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+                We bring together the best of modern technology and business expertise to deliver solutions that drive real results
+              </p>
             </div>
-            <div>
-              <div className="text-4xl md:text-5xl font-bold text-green-600 mb-2">50+</div>
-              <div className="text-slate-600">Happy Clients</div>
-            </div>
-            <div>
-              <div className="text-4xl md:text-5xl font-bold text-teal-600 mb-2">2+</div>
-              <div className="text-slate-600">Years of Excellence</div>
-            </div>
-            <div>
-              <div className="text-4xl md:text-5xl font-bold text-[#14CC60] mb-2">4.9/5</div>
-              <div className="text-slate-600">Client Satisfaction</div>
+            
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="text-center p-6 bg-white/50 backdrop-blur-xl rounded-2xl border border-[#14CC60]/20">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#14CC60] to-green-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <Code className="h-8 w-8 text-white" />
+                </div>
+                <h4 className="text-xl font-bold text-slate-900 mb-3">Modern Technology Stack</h4>
+                <p className="text-slate-600">
+                  We use the latest technologies and frameworks to build fast, scalable, and maintainable solutions
+                </p>
+              </div>
+              
+              <div className="text-center p-6 bg-white/50 backdrop-blur-xl rounded-2xl border border-[#14CC60]/20">
+                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-[#14CC60] rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <Brain className="h-8 w-8 text-white" />
+                </div>
+                <h4 className="text-xl font-bold text-slate-900 mb-3">AI-First Approach</h4>
+                <p className="text-slate-600">
+                  Leveraging artificial intelligence to create intelligent, automated solutions that grow with your business
+                </p>
+              </div>
+              
+              <div className="text-center p-6 bg-white/50 backdrop-blur-xl rounded-2xl border border-[#14CC60]/20">
+                <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-[#14CC60] rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <Zap className="h-8 w-8 text-white" />
+                </div>
+                <h4 className="text-xl font-bold text-slate-900 mb-3">Rapid Development</h4>
+                <p className="text-slate-600">
+                  Quick turnaround times without compromising quality, helping you get to market faster
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Modern Testimonials */}
+      {/* Our Process */}
       <section className="py-24 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <div className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-xl border border-[#14CC60]/30 rounded-full px-6 py-3 mb-8">
-              <span className="text-[#14CC60] font-medium text-sm">Client Success Stories</span>
+              <span className="text-[#14CC60] font-medium text-sm">How We Work</span>
             </div>
             <h2 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6">
-              What Our Clients
+              Our Development
               <span className="block bg-gradient-to-r from-[#14CC60] to-green-500 bg-clip-text text-transparent">
-                Say About Us
+                Process
               </span>
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Don't just take our word for it - hear from businesses we've helped transform
+              A proven methodology that ensures successful project delivery and exceptional results
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-4 gap-8">
             {[
               {
-                quote:
-                  "TechSetu transformed our online presence completely. The AI chatbot they built has reduced our customer service workload by 60%.",
-                author: "Sarah Johnson",
-                role: "CEO, RetailPlus",
-                avatar: "/placeholder.svg?height=60&width=60",
+                step: "01",
+                title: "Discovery & Planning",
+                desc: "We start by understanding your business goals, challenges, and requirements to create a comprehensive project roadmap.",
+                icon: Target,
               },
               {
-                quote:
-                  "The automation solutions they implemented saved us 20 hours per week. ROI was achieved within 3 months.",
-                author: "Michael Chen",
-                role: "Operations Manager, LogiFlow",
-                avatar: "/placeholder.svg?height=60&width=60",
+                step: "02",
+                title: "Design & Architecture",
+                desc: "Our team designs intuitive user experiences and robust technical architectures that scale with your business.",
+                icon: Lightbulb,
               },
               {
-                quote:
-                  "Professional, reliable, and innovative. They delivered exactly what we needed and provided excellent ongoing support.",
-                author: "Emily Rodriguez",
-                role: "Founder, GreenTech Solutions",
-                avatar: "/placeholder.svg?height=60&width=60",
+                step: "03",
+                title: "Development & Testing",
+                desc: "We build your solution using modern technologies, with rigorous testing to ensure quality and performance.",
+                icon: Code,
               },
-            ].map((testimonial, index) => (
+              {
+                step: "04",
+                title: "Deployment & Support",
+                desc: "Smooth deployment followed by ongoing support and maintenance to keep your solution running optimally.",
+                icon: Zap,
+              },
+            ].map((process, index) => (
               <Card
                 key={index}
-                className="group relative overflow-hidden bg-white/80 backdrop-blur-xl border border-[#14CC60]/30 transition-all duration-500 hover:scale-105"
+                className="relative overflow-hidden bg-white/80 backdrop-blur-xl border border-[#14CC60]/30"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-[#14CC60]/5 to-green-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <CardContent className="relative p-8">
-                  <div className="flex mb-6">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                    ))}
+                <CardContent className="relative p-8 text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#14CC60] to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <process.icon className="h-8 w-8 text-white" />
                   </div>
-                  <p className="text-slate-600 mb-8 text-lg leading-relaxed italic">"{testimonial.quote}"</p>
-                  <div className="flex items-center">
-                    <img
-                      src={testimonial.avatar || "/placeholder.svg"}
-                      alt={testimonial.author}
-                      className="w-12 h-12 rounded-full mr-4 border-2 border-[#14CC60]/50"
-                    />
-                    <div>
-                      <p className="font-bold text-slate-900">{testimonial.author}</p>
-                      <p className="text-sm text-[#14CC60]">{testimonial.role}</p>
-                    </div>
-                  </div>
+                  <div className="text-4xl font-bold text-[#14CC60]/30 mb-4">{process.step}</div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-4">{process.title}</h3>
+                  <p className="text-slate-600 leading-relaxed">{process.desc}</p>
                 </CardContent>
               </Card>
             ))}
@@ -326,95 +367,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Modern Footer */}
-      <footer id="footer" className="bg-slate-900 text-white py-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"></div>
-        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#14CC60]/50 to-transparent"></div>
+      <FAQSection />
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-12 mb-12">
-            <div>
-              <div className="flex items-center space-x-2 mb-6">
-                <div className="w-8 h-8 bg-gradient-to-br from-[#14CC60] to-green-500 rounded-lg flex items-center justify-center">
-                  <Sparkles className="w-4 h-4 text-white" />
-                </div>
-                <div className="text-2xl font-bold">TechSetu</div>
-              </div>
-              <p className="text-slate-400 leading-relaxed mb-6">
-                Transforming businesses through innovative technology solutions and exceptional digital experiences.
-              </p>
-              <Button
-                asChild
-                className="bg-gradient-to-r from-[#14CC60] to-green-500 hover:from-[#14CC60]/90 hover:to-green-500/90 text-white rounded-full"
-              >
-                <Link href="mailto:hello@techsetu.com">Book a Call</Link>
-              </Button>
-            </div>
-
-            <div>
-              <h3 className="font-bold mb-6 text-[#14CC60]">Services</h3>
-              <ul className="space-y-3 text-slate-400">
-                <li>
-                  <Link href="/services" className="hover:text-[#14CC60] transition-colors duration-300">
-                    Web Development
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services" className="hover:text-[#14CC60] transition-colors duration-300">
-                    AI Solutions
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services" className="hover:text-[#14CC60] transition-colors duration-300">
-                    Automation
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="font-bold mb-6 text-[#14CC60]">Company</h3>
-              <ul className="space-y-3 text-slate-400">
-                <li>
-                  <Link href="#about" className="hover:text-[#14CC60] transition-colors duration-300">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/portfolio" className="hover:text-[#14CC60] transition-colors duration-300">
-                    Portfolio
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#footer" className="hover:text-[#14CC60] transition-colors duration-300">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="font-bold mb-6 text-[#14CC60]">Contact</h3>
-              <ul className="space-y-3 text-slate-400">
-                <li>hello@techsetu.com</li>
-                <li>+1 (555) 123-4567</li>
-                <li>
-                  <Link
-                    href="mailto:hello@techsetu.com"
-                    className="hover:text-[#14CC60] transition-colors duration-300"
-                  >
-                    Get in Touch
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-slate-800 pt-8 text-center text-slate-400">
-            <p>&copy; 2024 TechSetu. All rights reserved. Built with passion and cutting-edge technology.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
