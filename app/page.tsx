@@ -21,25 +21,24 @@ export default function HomePage() {
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-green-500/10 rounded-full blur-3xl"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-slate-900 mb-8 leading-tight">
+          <div className="text-center pt-6 pb-8 sm:pt-20 sm:pb-16">
+            <h1 className="text-4xl xs:text-5xl md:text-7xl lg:text-8xl font-bold text-slate-900 mb-6 leading-tight">
               Transform Your
               <span className="block bg-gradient-to-r from-[#14CC60] via-green-500 to-[#14CC60] bg-clip-text text-transparent">
                 Digital Future
               </span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-slate-600 mb-12 max-w-4xl mx-auto leading-relaxed">
-              We help ambitious businesses grow through innovative web development, AI solutions, and intelligent
-              automation.
+            <p className="text-base xs:text-lg md:text-xl text-slate-600 mb-8 max-w-md sm:max-w-xl md:max-w-4xl mx-auto leading-relaxed">
+              We help ambitious businesses grow through innovative web development, AI solutions, and intelligent automation.
               <span className="text-[#14CC60] font-medium"> Let's build something extraordinary together.</span>
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
               <Button
                 size="lg"
                 asChild
-                className="bg-gradient-to-r from-[#14CC60] to-green-500 hover:from-[#14CC60]/90 hover:to-green-500/90 text-white px-8 py-4 text-lg font-medium transition-all duration-300 hover:scale-105 rounded-full"
+                className="bg-gradient-to-r from-[#14CC60] to-green-500 hover:from-[#14CC60]/90 hover:to-green-500/90 text-white px-6 py-3 text-base md:text-lg font-medium transition-all duration-300 hover:scale-105 rounded-full"
               >
                 <Link href="#footer" className="flex items-center">
                   Book a call
@@ -51,7 +50,7 @@ export default function HomePage() {
                 size="lg"
                 variant="outline"
                 asChild
-                className="border-2 border-[#14CC60]/50 text-[#14CC60] hover:bg-[#14CC60]/10 bg-white/80 backdrop-blur-xl px-8 py-4 text-lg font-medium transition-all duration-300 hover:scale-105 rounded-full"
+                className="border-2 border-[#14CC60]/50 text-[#14CC60] hover:bg-[#14CC60]/10 bg-white/80 backdrop-blur-xl px-6 py-3 text-base md:text-lg font-medium transition-all duration-300 hover:scale-105 rounded-full"
               >
                 <Link href="/portfolio">View Our Work</Link>
               </Button>
