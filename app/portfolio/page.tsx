@@ -10,56 +10,41 @@ export default function PortfolioPage() {
   const projects = [
     {
       id: 1,
-      title: "RetailPlus E-commerce Platform",
+      title: "Travix",
       category: "Web Development",
       description:
-        "Complete e-commerce solution with AI-powered product recommendations and automated inventory management.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["React", "Next.js", "Node.js", "MongoDB", "Stripe"],
+        "A travel booking website with user-friendly interface, featuring two-factor authentication and real-time price updates. Built with PostgreSQL for secure database management and travel APIs.",
+      image: "/travix.png",
+      technologies: ["EJS", "TailwindCSS", "Google-OAuth", "PostgreSQL", "Supabase"],
     },
     {
       id: 2,
-      title: "LogiFlow Automation Suite",
-      category: "Automation",
+      title: "Image Processing Application",
+      category: "AI Solutions",
       description:
-        "Comprehensive workflow automation system that streamlined operations and reduced manual processing time.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["Python", "Zapier", "AWS Lambda", "PostgreSQL", "React"],
+        "A GUI-based application for image editing with features like grayscale, blur, and pencil sketch filters. Includes real-time effects and image capture functionality using OpenCV and Tkinter.",
+      image: "/image-processing.png",
+      technologies: ["Python", "OpenCV", "Tkinter", "PIL", "NumPy", "GUI Programming"],
     },
     {
       id: 3,
-      title: "GreenTech AI Analytics",
-      category: "AI Solutions",
+      title: "IETE Website",
+      category: "Web Development",
       description:
-        "Machine learning platform for predictive maintenance and energy optimization in renewable energy systems.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["Python", "TensorFlow", "AWS", "React", "D3.js"],
+        "A responsive website for IETE-SF MPSTME built using no-code platforms. Showcases organizational information with smooth navigation, mobile support, and an engaging user interface.",
+      image: "/iete.png",
+      technologies: ["Figma", "Wix/Wix-Studio", "UI/UX Design"],
     },
     {
       id: 4,
-      title: "HealthCare Connect Portal",
-      category: "Web Development",
-      description: "Patient management system with telemedicine capabilities and automated appointment scheduling.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["React", "Node.js", "PostgreSQL", "WebRTC", "AWS"],
-    },
-    {
-      id: 5,
-      title: "SmartFinance AI Advisor",
-      category: "AI Solutions",
-      description:
-        "Intelligent financial advisory platform with personalized investment recommendations and risk assessment.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["Python", "scikit-learn", "React", "Node.js", "MongoDB"],
-    },
-    {
-      id: 6,
-      title: "ManufacturingFlow Optimizer",
+      title: "Itinerary Planner UiPath Bot",
       category: "Automation",
-      description: "IoT-enabled production line automation with real-time monitoring and quality control systems.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["Python", "IoT Sensors", "React", "InfluxDB", "Docker"],
+      description:
+        "Created a UiPath automation bot that generates personalized travel plans. It collects user input, fetches durations and images via Google Maps API, and emails a polished Word itinerary.",
+      image: "uipath",
+      technologies: ["UiPath Studio", "Google Maps API", "Word Automation", "SMTP"],
     },
+    
   ]
 
   return (
@@ -78,7 +63,7 @@ export default function PortfolioPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <Badge className="mb-6 bg-[#14CC60]/10 text-[#14CC60] hover:bg-[#14CC60]/20">
-              100+ Successful Projects
+              New Agency, Fresh Ideas
             </Badge>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-slate-900 mb-8 leading-tight">
               Our
@@ -87,8 +72,7 @@ export default function PortfolioPage() {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-600 mb-12 max-w-4xl mx-auto leading-relaxed">
-              Explore our successful projects and see how we've helped businesses transform their operations through
-              innovative technology solutions.
+              Driven by passion and creativity, we craft digital products through personal and demo projects that highlight our potential—ready to collaborate and build something exceptional with you.
             </p>
           </div>
         </div>
@@ -104,18 +88,18 @@ export default function PortfolioPage() {
                 className="group hover:shadow-2xl transition-all duration-300 border-slate-200 bg-white/80 overflow-hidden"
               >
                 <div className="relative">
-                  <img
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <Badge className="bg-[#14CC60]/10 text-[#14CC60] border-[#14CC60]/20">
-                      {project.category}
-                    </Badge>
+                  <div className="w-full h-full flex items-center justify-center bg-gray-200 p-4">
+                    <img
+                      src={project.image || "/placeholder.svg"}
+                      alt={project.title}
+                      className="w-full h-64 object-contain"
+                    />
                   </div>
                 </div>
                 <CardContent className="p-8">
+                  <Badge className="mb-3 bg-[#14CC60]/10 text-[#14CC60] border-[#14CC60]/20">
+                    {project.category}
+                  </Badge>
                   <h3 className="text-xl font-bold text-slate-900 mb-4">{project.title}</h3>
                   <p className="text-slate-600 mb-6">{project.description}</p>
                   <div className="mb-6">
@@ -128,20 +112,7 @@ export default function PortfolioPage() {
                       ))}
                     </div>
                   </div>
-                  <div className="flex gap-3">
-                    <Button asChild className="flex-1 bg-[#14CC60] hover:bg-[#14CC60]/90 rounded-full">
-                      <Link href="/#contact">
-                        Start Similar Project <ArrowRight className="ml-2 h-4 w-4" />
-                      </Link>
-                    </Button>
-                    <Button
-                      variant="outline"
-                      size="icon"
-                      className="border-[#14CC60]/50 text-[#14CC60] hover:bg-[#14CC60]/10 bg-transparent rounded-full"
-                    >
-                      <ExternalLink className="h-4 w-4" />
-                    </Button>
-                  </div>
+                  
                 </CardContent>
               </Card>
             ))}
