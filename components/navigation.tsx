@@ -18,7 +18,7 @@ export function Navigation() {
       {/* Main Navigation Pill */}
       <div className="relative">
         {/* Glassmorphism Pill Container */}
-        <div className="bg-white/20 backdrop-blur-2xl border border-[#14CC60]/60 rounded-full px-1 py-2">
+        <div className="bg-white/10 backdrop-blur-3xl border border-[#14CC60]/60 rounded-full px-1 py-2 shadow-lg">
           <div className="flex items-center justify-between px-2">
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-2 group">

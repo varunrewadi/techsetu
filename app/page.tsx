@@ -11,8 +11,8 @@ export default function HomePage() {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-green-50/30">
       <Navigation />
 
-      {/* Modern Hero Section */}
-      <section className="relative min-h-screen flex items-center overflow-hidden">
+      {/*MODIFIED HERO SECTION*/}
+      <section className="relative flex items-center overflow-hidden min-h-[100svh]">
         {/* Background Elements */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#b1b1b12e_1px,transparent_1px),linear-gradient(to_bottom,#b1b1b12e_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
         
@@ -20,27 +20,31 @@ export default function HomePage() {
         <div className="absolute top-20 left-10 w-72 h-72 bg-[#14CC60]/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-green-500/10 rounded-full blur-3xl"></div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center pt-6 pb-8 sm:pt-20 sm:pb-16">
-            <h1 className="text-4xl xs:text-5xl md:text-7xl lg:text-8xl font-bold text-slate-900 mb-6 leading-tight">
+        <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Reverted sm: padding to original values */}
+          <div className="text-center pt-24 pb-12 sm:pt-20 sm:pb-16">
+            {/* Larger mobile font size, original desktop sizes restored */}
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-slate-900 mb-6 leading-tight">
               Transform Your
               <span className="block bg-gradient-to-r from-[#14CC60] via-green-500 to-[#14CC60] bg-clip-text text-transparent">
                 Digital Future
               </span>
             </h1>
 
-            <p className="text-base xs:text-lg md:text-xl text-slate-600 mb-8 max-w-md sm:max-w-xl md:max-w-4xl mx-auto leading-relaxed">
+            {/* Larger mobile font size, original desktop sizes & max-width restored */}
+            <p className="text-lg md:text-xl text-slate-600 mb-10 max-w-md sm:max-w-xl md:max-w-4xl mx-auto leading-relaxed">
               We help ambitious businesses grow through innovative web development, AI solutions, and intelligent automation.
-              <span className="text-[#14CC60] font-medium"> Let's build something extraordinary together.</span>
+              <span className="font-semibold text-[#14CC60]"> Let's build something extraordinary together.</span>
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
+            {/* This mobile-first pattern correctly scopes changes to mobile view only */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-10 max-w-sm mx-auto sm:max-w-none">
               <Button
                 size="lg"
                 asChild
-                className="bg-gradient-to-r from-[#14CC60] to-green-500 hover:from-[#14CC60]/90 hover:to-green-500/90 text-white px-6 py-3 text-base md:text-lg font-medium transition-all duration-300 hover:scale-105 rounded-full"
+                className="w-full sm:w-auto bg-gradient-to-r from-[#14CC60] to-green-500 hover:from-[#14CC60]/90 hover:to-green-500/90 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 hover:scale-105 rounded-full"
               >
-                <Link href="#footer" className="flex items-center">
+                <Link href="#footer" className="flex items-center justify-center">
                   Book a call
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
@@ -50,7 +54,7 @@ export default function HomePage() {
                 size="lg"
                 variant="outline"
                 asChild
-                className="border-2 border-[#14CC60]/50 text-[#14CC60] hover:bg-[#14CC60]/10 bg-white/80 backdrop-blur-xl px-6 py-3 text-base md:text-lg font-medium transition-all duration-300 hover:scale-105 rounded-full"
+                className="w-full sm:w-auto border-2 border-[#14CC60]/50 text-[#14CC60] hover:bg-[#14CC60]/10 bg-white/80 backdrop-blur-xl px-8 py-4 text-lg font-semibold transition-all duration-300 hover:scale-105 rounded-full"
               >
                 <Link href="/portfolio">View Our Work</Link>
               </Button>
@@ -58,6 +62,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      {/* --- END OF MODIFIED SECTION --- */}
+
 
       {/* Modern Services Overview */}
       <section className="py-24 relative">
@@ -165,57 +171,6 @@ export default function HomePage() {
               technology
             </p>
           </div>
-
-          {/* Our Story */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-            <div>
-              <h3 className="text-3xl font-bold text-slate-900 mb-6">Our Story</h3>
-              <p className="text-lg text-slate-600 mb-6">
-                TechSetu is a new digital agency founded by passionate technologists and creators who believe in the power of technology to transform ideas into reality.
-              </p>
-              <p className="text-lg text-slate-600 mb-6">
-                While we may be new and haven't worked with clients yet, our vision is clear: to help businesses and entrepreneurs unlock their potential through modern web development, AI, and automation.
-              </p>
-              <p className="text-lg text-slate-600">
-                We're excited to start our journey, build lasting partnerships, and make a real impact—one project at a time.
-              </p>
-            </div>
-            <div className="relative">
-              <img
-                src="/placeholder.svg?height=400&width=600"
-                alt="TechSetu team working"
-                className="rounded-2xl border border-[#14CC60]/20"
-              />
-            </div>
-          </div>
-
-          {/* Our Approach */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-            <div className="relative">
-              <img
-                src="/placeholder.svg?height=400&width=600"
-                alt="Our development process"
-                className="rounded-2xl border border-[#14CC60]/20"
-              />
-            </div>
-            <div>
-              <h3 className="text-3xl font-bold text-slate-900 mb-6">Our Approach</h3>
-              <p className="text-lg text-slate-600 mb-6">
-                We believe in a collaborative, transparent approach to technology solutions. Every project starts with
-                understanding your unique challenges and goals.
-              </p>
-              <p className="text-lg text-slate-600 mb-6">
-                Our process combines cutting-edge technology with proven methodologies to deliver solutions that not only
-                meet your current needs but scale with your business growth.
-              </p>
-              <p className="text-lg text-slate-600">
-                From initial consultation to final deployment, we work closely with you to ensure every solution aligns
-                perfectly with your vision and objectives.
-              </p>
-            </div>
-          </div>
-
-          
 
           {/* Why Choose Us */}
           <div className="mt-20">

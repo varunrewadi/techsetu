@@ -10,7 +10,7 @@ export default function PortfolioPage() {
   const projects = [
     {
       id: 1,
-      title: "Travix",
+      title: "Travix - Travel Booking",
       category: "Web Development",
       description:
         "A travel booking website with user-friendly interface, featuring two-factor authentication and real-time price updates. Built with PostgreSQL for secure database management and travel APIs.",
@@ -28,7 +28,7 @@ export default function PortfolioPage() {
     },
     {
       id: 3,
-      title: "IETE Website",
+      title: "IETE-SF MPSTME Website",
       category: "Web Development",
       description:
         "A responsive website for IETE-SF MPSTME built using no-code platforms. Showcases organizational information with smooth navigation, mobile support, and an engaging user interface.",
