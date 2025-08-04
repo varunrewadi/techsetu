@@ -97,7 +97,7 @@ export default function PortfolioPage() {
                   </div>
                 </div>
                 <CardContent className="p-8">
-                  <Badge className="mb-3 bg-[#14CC60]/10 text-[#14CC60] border-[#14CC60]/20">
+                  <Badge className="mb-3 hover:bg-[#14CC60]/20 bg-[#14CC60]/10 text-[#14CC60] border-[#14CC60]/20">
                     {project.category}
                   </Badge>
                   <h3 className="text-xl font-bold text-slate-900 mb-4">{project.title}</h3>
