@@ -24,17 +24,18 @@ export default function HomePage() {
           {/* Reverted sm: padding to original values */}
           <div className="text-center pt-24 pb-12 sm:pt-20 sm:pb-16">
             {/* Larger mobile font size, original desktop sizes restored */}
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-slate-900 mb-6 leading-tight">
-              Transform Your
+            
+            <h1 className="text-5xl md:text-7xl lg:text-7xl font-extrabold text-slate-900 mb-6 leading-tight">
+              We Build What 
               <span className="block bg-gradient-to-r from-[#14CC60] via-green-500 to-[#14CC60] bg-clip-text text-transparent">
-                Digital Future
+                the World Needs Next.
               </span>
             </h1>
 
             {/* Larger mobile font size, original desktop sizes & max-width restored */}
             <p className="text-lg md:text-xl text-slate-600 mb-10 max-w-md sm:max-w-xl md:max-w-4xl mx-auto leading-relaxed">
-              We help ambitious businesses grow through innovative web development, AI solutions, and intelligent automation.
-              <span className="font-semibold text-[#14CC60]"> Let's build something extraordinary together.</span>
+             From MVPs to full-scale platforms, we help startups, creators, and nonprofits go digital — fast.
+              <span className="font-semibold text-[#14CC60]"> Let's create something real, together.</span>
             </p>
 
             {/* This mobile-first pattern correctly scopes changes to mobile view only */}
