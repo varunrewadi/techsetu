@@ -26,14 +26,14 @@ const config: Config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#14CC60", // Your specific green
+          DEFAULT: "#1aa153", // Your specific green
           foreground: "#ffffff",
           50: "#f0fdf4",
           100: "#dcfce7",
           200: "#bbf7d0",
           300: "#86efac",
           400: "#4ade80",
-          500: "#14CC60", // Your specific green
+          500: "#1aa153", // Your specific green
           600: "#16a34a",
           700: "#15803d",
           800: "#166534",

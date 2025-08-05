@@ -16,8 +16,8 @@ export default function HomePage() {
         {/* Background Elements */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#b1b1b12e_1px,transparent_1px),linear-gradient(to_bottom,#b1b1b12e_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
         
-        <div className="absolute inset-0 bg-gradient-to-br from-[#14CC60]/5 via-transparent to-green-500/5"></div>
-        <div className="absolute top-20 left-10 w-72 h-72 bg-[#14CC60]/10 rounded-full blur-3xl"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1aa153]/5 via-transparent to-green-500/5"></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-[#1aa153]/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-green-500/10 rounded-full blur-3xl"></div>
 
         <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,7 +27,7 @@ export default function HomePage() {
             
             <h1 className="text-5xl md:text-7xl lg:text-7xl font-extrabold text-slate-900 mb-6 leading-tight">
               We Build What 
-              <span className="block bg-gradient-to-r from-[#14CC60] via-green-500 to-[#14CC60] bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-[#1aa153]  to-[#1aa153] bg-clip-text text-transparent">
                 the World Needs Next.
               </span>
             </h1>
@@ -35,7 +35,7 @@ export default function HomePage() {
             {/* Larger mobile font size, original desktop sizes & max-width restored */}
             <p className="text-lg md:text-xl text-slate-600 mb-10 max-w-md sm:max-w-xl md:max-w-4xl mx-auto leading-relaxed">
              From MVPs to full-scale platforms, we help startups, creators, and nonprofits go digital — fast.
-              <span className="font-semibold text-[#14CC60]"> Let's create something real, together.</span>
+              <span className="font-semibold text-[#1aa153]"> Let's create something real, together.</span>
             </p>
 
             {/* This mobile-first pattern correctly scopes changes to mobile view only */}
@@ -43,7 +43,7 @@ export default function HomePage() {
               <Button
                 size="lg"
                 asChild
-                className="w-full sm:w-auto bg-gradient-to-r from-[#14CC60] to-green-500 hover:from-[#14CC60]/90 hover:to-green-500/90 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 hover:scale-105 rounded-full"
+                className="w-full sm:w-auto bg-gradient-to-r from-[#1aa153] to-green-500 hover:from-[#1aa153]/90 hover:to-green-500/90 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 hover:scale-105 rounded-full"
               >
                 <Link href="#footer" className="flex items-center justify-center">
                   Book a call
@@ -55,7 +55,7 @@ export default function HomePage() {
                 size="lg"
                 variant="outline"
                 asChild
-                className="w-full sm:w-auto border-2 border-[#14CC60]/50 text-[#14CC60] hover:bg-[#14CC60]/10 bg-white/80 backdrop-blur-xl px-8 py-4 text-lg font-semibold transition-all duration-300 hover:scale-105 rounded-full"
+                className="w-full sm:w-auto border-2 border-[#1aa153]/50 text-[#`1aa153`] hover:bg-[#1aa153]/10 bg-white/80 backdrop-blur-xl px-8 py-4 text-lg font-semibold transition-all duration-300 hover:scale-105 rounded-full"
               >
                 <Link href="/portfolio">View Our Work</Link>
               </Button>
@@ -70,12 +70,12 @@ export default function HomePage() {
       <section className="py-24 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <div className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-xl border border-[#14CC60]/30 rounded-full px-6 py-3 mb-8">
-              <span className="text-[#14CC60] font-medium text-sm">Our Core Services</span>
+            <div className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-xl border border-[#1aa153]/30 rounded-full px-6 py-3 mb-8">
+              <span className="text-[#1aa153] font-medium text-sm">Our Core Services</span>
             </div>
             <h2 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6">
               Comprehensive Technology
-              <span className="block bg-gradient-to-r from-[#14CC60] to-green-500 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-[#1aa153] to-green-500 bg-clip-text text-transparent">
                 Solutions
               </span>
             </h2>
@@ -86,10 +86,10 @@ export default function HomePage() {
 
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Web Development Card */}
-            <Card className="relative overflow-hidden bg-white/80 backdrop-blur-xl border border-[#14CC60]/30 transition-all duration-500">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#14CC60]/5 to-green-500/5 opacity-0 transition-opacity duration-500"></div>
+            <Card className="relative overflow-hidden bg-white/80 backdrop-blur-xl border border-[#1aa153]/30 transition-all duration-500">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#1aa153]/5 to-green-500/5 opacity-0 transition-opacity duration-500"></div>
               <CardContent className="relative p-8 text-center">
-                <div className="w-20 h-20 bg-gradient-to-br from-[#14CC60] to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-8 transition-all duration-300">
+                <div className="w-20 h-20 bg-gradient-to-br from-[#1aa153] to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-8 transition-all duration-300">
                   <Code className="h-10 w-10 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-slate-900 mb-4">Web Development</h3>
@@ -99,7 +99,7 @@ export default function HomePage() {
                 <Button
                   variant="outline"
                   asChild
-                  className="border-[#14CC60]/50 text-[#14CC60] hover:bg-[#14CC60]/10 bg-transparent transition-all duration-300 rounded-full"
+                  className="border-[#1aa153]/50 text-[#1aa153] hover:bg-[#1aa153]/10 bg-transparent transition-all duration-300 rounded-full"
                 >
                   <Link href="/services#web-development">Learn More</Link>
                 </Button>
@@ -108,9 +108,9 @@ export default function HomePage() {
 
             {/* AI Solutions Card */}
             <Card className="relative overflow-hidden bg-white/80 backdrop-blur-xl border border-green-500/30 transition-all duration-500">
-              <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 to-[#14CC60]/5 opacity-0 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 to-[#1aa153]/5 opacity-0 transition-opacity duration-500"></div>
               <CardContent className="relative p-8 text-center">
-                <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-[#14CC60] rounded-2xl flex items-center justify-center mx-auto mb-8 transition-all duration-300">
+                <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-[#1aa153] rounded-2xl flex items-center justify-center mx-auto mb-8 transition-all duration-300">
                   <Brain className="h-10 w-10 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-slate-900 mb-4">AI Solutions</h3>
@@ -129,9 +129,9 @@ export default function HomePage() {
 
             {/* Automation Card */}
             <Card className="relative overflow-hidden bg-white/80 backdrop-blur-xl border border-teal-500/30 transition-all duration-500">
-              <div className="absolute inset-0 bg-gradient-to-br from-teal-500/5 to-[#14CC60]/5 opacity-0 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-teal-500/5 to-[#1aa153]/5 opacity-0 transition-opacity duration-500"></div>
               <CardContent className="relative p-8 text-center">
-                <div className="w-20 h-20 bg-gradient-to-br from-teal-500 to-[#14CC60] rounded-2xl flex items-center justify-center mx-auto mb-8 transition-all duration-300">
+                <div className="w-20 h-20 bg-gradient-to-br from-teal-500 to-[#1aa153] rounded-2xl flex items-center justify-center mx-auto mb-8 transition-all duration-300">
                   <Zap className="h-10 w-10 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-slate-900 mb-4">Automation</h3>
@@ -158,12 +158,12 @@ export default function HomePage() {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <div className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-xl border border-[#14CC60]/30 rounded-full px-6 py-3 mb-8">
-              <span className="text-[#14CC60] font-medium text-sm">About TechSetu</span>
+            <div className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-xl border border-[#1aa153]/30 rounded-full px-6 py-3 mb-8">
+              <span className="text-[#1aa153] font-medium text-sm">About TechSetu</span>
             </div>
             <h2 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6">
               Excellence in Every
-              <span className="block bg-gradient-to-r from-[#14CC60] to-green-500 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-[#1aa153] to-green-500 bg-clip-text text-transparent">
                 Detail
               </span>
             </h2>
@@ -183,8 +183,8 @@ export default function HomePage() {
             </div>
             
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center p-6 bg-white/50 backdrop-blur-xl rounded-2xl border border-[#14CC60]/20">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#14CC60] to-green-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <div className="text-center p-6 bg-white/50 backdrop-blur-xl rounded-2xl border border-[#1aa153]/20">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#1aa153] to-green-500 rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Code className="h-8 w-8 text-white" />
                 </div>
                 <h4 className="text-xl font-bold text-slate-900 mb-3">Modern Technology Stack</h4>
@@ -193,8 +193,8 @@ export default function HomePage() {
                 </p>
               </div>
               
-              <div className="text-center p-6 bg-white/50 backdrop-blur-xl rounded-2xl border border-[#14CC60]/20">
-                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-[#14CC60] rounded-xl flex items-center justify-center mx-auto mb-4">
+              <div className="text-center p-6 bg-white/50 backdrop-blur-xl rounded-2xl border border-[#1aa153]/20">
+                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-[#1aa153] rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Brain className="h-8 w-8 text-white" />
                 </div>
                 <h4 className="text-xl font-bold text-slate-900 mb-3">AI-First Approach</h4>
@@ -203,8 +203,8 @@ export default function HomePage() {
                 </p>
               </div>
               
-              <div className="text-center p-6 bg-white/50 backdrop-blur-xl rounded-2xl border border-[#14CC60]/20">
-                <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-[#14CC60] rounded-xl flex items-center justify-center mx-auto mb-4">
+              <div className="text-center p-6 bg-white/50 backdrop-blur-xl rounded-2xl border border-[#1aa153]/20">
+                <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-[#1aa153] rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Zap className="h-8 w-8 text-white" />
                 </div>
                 <h4 className="text-xl font-bold text-slate-900 mb-3">Rapid Development</h4>
@@ -221,12 +221,12 @@ export default function HomePage() {
       <section className="py-24 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <div className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-xl border border-[#14CC60]/30 rounded-full px-6 py-3 mb-8">
-              <span className="text-[#14CC60] font-medium text-sm">How We Work</span>
+            <div className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-xl border border-[#1aa153]/30 rounded-full px-6 py-3 mb-8">
+              <span className="text-[#1aa153] font-medium text-sm">How We Work</span>
             </div>
             <h2 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6">
               Our Development
-              <span className="block bg-gradient-to-r from-[#14CC60] to-green-500 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-[#1aa153] to-green-500 bg-clip-text text-transparent">
                 Process
               </span>
             </h2>
@@ -264,13 +264,13 @@ export default function HomePage() {
             ].map((process, index) => (
               <Card
                 key={index}
-                className="relative overflow-hidden bg-white/80 backdrop-blur-xl border border-[#14CC60]/30"
+                className="relative overflow-hidden bg-white/80 backdrop-blur-xl border border-[#1aa153]/30"
               >
                 <CardContent className="relative p-8 text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#14CC60] to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#1aa153] to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <process.icon className="h-8 w-8 text-white" />
                   </div>
-                  <div className="text-4xl font-bold text-[#14CC60]/30 mb-4">{process.step}</div>
+                  <div className="text-4xl font-bold text-[#1aa153]/30 mb-4">{process.step}</div>
                   <h3 className="text-xl font-bold text-slate-900 mb-4">{process.title}</h3>
                   <p className="text-slate-600 leading-relaxed">{process.desc}</p>
                 </CardContent>

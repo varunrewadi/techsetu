@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
+import ButtonTextChange from "@/components/ui/ButtonTextChange"
 import { Sparkles } from "lucide-react"
 
 export function Navigation() {
@@ -18,11 +19,11 @@ export function Navigation() {
       {/* Main Navigation Pill */}
       <div className="relative">
         {/* Glassmorphism Pill Container */}
-        <div className="bg-white/10 backdrop-blur-md border border-[#14CC60]/60 rounded-full px-1 py-2 shadow-lg">
+        <div className="bg-white/10 backdrop-blur-md border border-[#1aa153]/60 rounded-full px-1 py-2 shadow-lg">
           <div className="flex items-center justify-between px-2">
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-2 group">
-              <div className="w-7 h-7 bg-gradient-to-br from-[#14CC60] to-green-500 rounded-lg flex items-center justify-center group-hover:scale-105 transition-all duration-300">
+              <div className="w-7 h-7 bg-gradient-to-br from-[#1aa153] to-green-500 rounded-lg flex items-center justify-center group-hover:scale-105 transition-all duration-300">
                 <Sparkles className="w-3 h-3 text-white" />
               </div>
               <div className="text-base font-bold text-slate-800 hidden sm:block">TechSetu</div>
@@ -36,8 +37,8 @@ export function Navigation() {
                   href={item.href}
                   className={`px-3 py-1.5 text-sm font-medium rounded-full transition-all duration-300 ${
                     pathname === item.href
-                      ? "text-[#14CC60] bg-[#14CC60]/10"
-                      : "text-slate-600 hover:text-[#14CC60] hover:bg-slate-100/50"
+                      ? "text-[#1aa153] bg-[#1aa153]/10"
+                      : "text-slate-600 hover:text-[#1aa153] hover:bg-slate-100/50"
                   }`}
                 >
                   {item.label}
@@ -45,13 +46,10 @@ export function Navigation() {
               ))}
             </div>
 
-            {/* CTA Button */}
-            <Button
-              asChild
-              className="bg-gradient-to-r from-[#14CC60] to-green-500 hover:from-[#14CC60]/90 hover:to-green-500/90 text-white border-0 rounded-full px-4 py-1.5 text-sm font-medium transition-all duration-300 hover:scale-105"
-            >
-              <Link href="#footer">Book a call</Link>
-            </Button>
+            {/* CTA Button replaced with ButtonTextChange */}
+            <Link href="#footer">
+              <ButtonTextChange />
+            </Link>
           </div>
         </div>
       </div>

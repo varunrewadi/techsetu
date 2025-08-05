@@ -56,18 +56,18 @@ export default function PortfolioPage() {
       <section className="relative min-h-screen flex items-center overflow-hidden">
         {/* Background Elements (copied from HomePage hero) */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#b1b1b12e_1px,transparent_1px),linear-gradient(to_bottom,#b1b1b12e_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-[#14CC60]/5 via-transparent to-green-500/5"></div>
-        <div className="absolute top-20 left-10 w-72 h-72 bg-[#14CC60]/10 rounded-full blur-3xl"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1aa153]/5 via-transparent to-green-500/5"></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-[#1aa153]/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-green-500/10 rounded-full blur-3xl"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <Badge className="mb-6 bg-[#14CC60]/10 text-[#14CC60] hover:bg-[#14CC60]/20">
+            <Badge className="mb-6 bg-[#1aa153]/10 text-[#1aa153] hover:bg-[#1aa153]/20">
               New Agency, Fresh Ideas
             </Badge>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-slate-900 mb-8 leading-tight">
               Our
-              <span className="block bg-gradient-to-r from-[#14CC60] to-green-500 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-[#1aa153] to-green-500 bg-clip-text text-transparent">
                 Portfolio
               </span>
             </h1>
@@ -97,7 +97,7 @@ export default function PortfolioPage() {
                   </div>
                 </div>
                 <CardContent className="p-8">
-                  <Badge className="mb-3 hover:bg-[#14CC60]/20 bg-[#14CC60]/10 text-[#14CC60] border-[#14CC60]/20">
+                  <Badge className="mb-3 hover:bg-[#1aa153]/20 bg-[#1aa153]/10 text-[#1aa153] border-[#1aa153]/20">
                     {project.category}
                   </Badge>
                   <h3 className="text-xl font-bold text-slate-900 mb-4">{project.title}</h3>
@@ -121,14 +121,14 @@ export default function PortfolioPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#14CC60] to-green-500">
+      <section className="py-20 bg-gradient-to-r from-[#1aa153] to-green-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Start Your Project?</h2>
           <p className="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
             Let's discuss how we can help you achieve similar results for your business
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" asChild className="bg-white text-[#14CC60] hover:bg-green-50 rounded-full">
+            <Button size="lg" asChild className="bg-white text-[#1aa153] hover:bg-green-50 rounded-full">
               <Link href="/#contact">
                 Get Free Consultation <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
@@ -137,7 +137,7 @@ export default function PortfolioPage() {
               size="lg"
               variant="outline"
               asChild
-              className="border-white text-white hover:bg-white hover:text-[#14CC60] bg-transparent rounded-full"
+              className="border-white text-white hover:bg-white hover:text-[#1aa153] bg-transparent rounded-full"
             >
               <Link href="/services">Explore Services</Link>
             </Button>

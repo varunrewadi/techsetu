@@ -43,12 +43,12 @@ export function FAQSection() {
     <section className="py-24 relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <div className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-xl border border-[#14CC60]/30 rounded-full px-6 py-3 mb-8">
-            <span className="text-[#14CC60] font-medium text-sm">Frequently Asked Questions</span>
+          <div className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-xl border border-[#1aa153]/30 rounded-full px-6 py-3 mb-8">
+            <span className="text-[#1aa153] font-medium text-sm">Frequently Asked Questions</span>
           </div>
           <h2 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6">
             Got Questions?
-            <span className="block bg-gradient-to-r from-[#14CC60] to-green-500 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-[#1aa153] to-green-500 bg-clip-text text-transparent">
               We've Got Answers
             </span>
           </h2>
@@ -57,18 +57,18 @@ export function FAQSection() {
           </p>
         </div>
 
-        <div className="h-fit border border-[#14CC60]/30 rounded-2xl p-2 bg-white/80 backdrop-blur-xl">
+        <div className="h-fit border border-[#1aa153]/30 rounded-2xl p-2 bg-white/80 backdrop-blur-xl">
           {faqData.map((tab, index) => (
             <div
               key={index}
-              className={`overflow-hidden ${index !== faqData.length - 1 ? 'border-b border-[#14CC60]/20' : ''}`}
+              className={`overflow-hidden ${index !== faqData.length - 1 ? 'border-b border-[#1aa153]/20' : ''}`}
             >
               <button
-                className="p-6 w-full cursor-pointer text-left text-lg font-semibold text-slate-900 hover:text-[#14CC60] transition-all duration-300 flex gap-3 items-center"
+                className="p-6 w-full cursor-pointer text-left text-lg font-semibold text-slate-900 hover:text-[#1aa153] transition-all duration-300 flex gap-3 items-center"
                 onClick={() => handleClick(index)}
               >
                 <Plus
-                  className={`transition-transform ease-in-out w-5 h-5 text-[#14CC60] flex-shrink-0 ${
+                  className={`transition-transform ease-in-out w-5 h-5 text-[#1aa153] flex-shrink-0 ${
                     activeIndex === index ? 'rotate-45' : 'rotate-0'
                   }`}
                 />
@@ -91,7 +91,7 @@ export function FAQSection() {
           <p className="text-slate-600 mb-6">Still have questions? We'd love to hear from you!</p>
           <Button
             asChild
-            className="bg-gradient-to-r from-[#14CC60] to-green-500 hover:from-[#14CC60]/90 hover:to-green-500/90 text-white px-8 py-4 text-lg font-medium transition-all duration-300 hover:scale-105 rounded-full"
+            className="bg-gradient-to-r from-[#1aa153] to-green-500 hover:from-[#1aa153]/90 hover:to-green-500/90 text-white px-8 py-4 text-lg font-medium transition-all duration-300 hover:scale-105 rounded-full"
           >
             <Link href="mailto:hello@techsetu.com">Get in Touch</Link>
           </Button>
