@@ -62,14 +62,17 @@ export default function HomePage() {
                 </button>
               </Link>
 
-              <Button
-                size="lg"
-                variant="outline"
-                asChild
-                className="w-full sm:w-auto border-2 border-[#1aa153]/50 text-[#`1aa153`] hover:bg-[#1aa153]/10 bg-white/80 backdrop-blur-xl px-8 py-4 text-lg font-semibold transition-all duration-300 rounded-full"
+              <Link
+                href="/portfolio"
+                className="flex items-center justify-center"
               >
-                <Link href="/portfolio">View Our Work</Link>
-              </Button>
+                <button className="relative inline-flex h-12 w-[180px] overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50 hover:scale-105 transition-transform duration-300">
+                  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#a7f3d0_0%,#34d399_25%,#22c55e_50%,#16a34a_75%,#a7f3d0_100%)] dark:bg-[conic-gradient(from_90deg_at_50%_50%,#6ee7b7_0%,#34d399_25%,#22c55e_50%,#16a34a_75%,#6ee7b7_100%)]" />
+                  <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full dark:bg-[#070e41] bg-[#ffffff] px-8 py-1 text-lg font-semibold dark:text-gray-50 text-black backdrop-blur-3xl">
+                    Our Work
+                  </span>
+                </button>
+              </Link>
             </div>
           </div>
         </div>
